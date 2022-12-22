@@ -453,12 +453,12 @@ git add 文件名#将我们需要提交的代码从工作区添加到暂存区
 git commit -m &quot;提交&quot;#将暂存区里的改动给提交到本地的版本库
 git push origin master#将本地版本库的分支推送到远程服务器对应的分支上
 </code></pre><p>提交结果:<br>
-<img src="/images/a.png" alt="img">
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/a.png" alt="img">
 2.用socket 技术编写程序使用容器技术Docker，将socket客户端和服务端分别运行在不同的容器中
 ，实现socket客户端和服务端之间的信息传递。<br>
 a)	在虚拟机下载安装好Docker后，我拉取了java镜像，查看ubuntu的所有镜像<br>
 b)	基于java镜像我创建了容器s1和s2：
-<img src="/images/b.png" alt="img">
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/b.png" alt="img">
 c)	查看到容器s1的IP地址为172.17.0.2<br>
 d)	之后创建.java文件，分别为SocketServer.java和SocketClient.java文件：</p>
 <pre tabindex="0"><code>import java.io.BufferedReader;
@@ -588,13 +588,13 @@ public class SocketClient {
 }
 </code></pre><p>e)	把相应的文件分别复制到相应的容器里<br>
 f)	分别进入容器，编译运行.java文件，连接成功后传输信息，成功实现了socket客户端和服务端之间的信息传递：<br>
-<img src="/images/c.png" alt="img">
-<img src="/images/d.png" alt="img"><br>
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/c.png" alt="img">
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/d.png" alt="img"><br>
 3.Hugo<br>
 a)	下载安装并查看hugo版本 <br>
 b)	使用 Hugo 建立站点<br>
 c)	下载主题<br>
-<img src="/images/e.png" alt="img"><br>
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/e.png" alt="img"><br>
 d)	然后打开confit.toml文件，将主题加入，还有将baseURL修改为自己linux机的ip<br>
 e)	创建名为myfirstblog的markdown文件，在markdown文件中写入内容，最后生成静态页面<br>
 f)	展示博客包含的内容：Linux课程中的学习笔记、大作业完成步骤记录，可以访问我的网址来查看：https://jiangyyi.github.io/linuxassitment.io<br>
@@ -604,16 +604,16 @@ i)	测试下载nginx成功<br>
 j)	配置nginx.conf, 修改nginx配置文件的用户为root，在http{}的模块内添加service配置，开启端口号为1314<br>
 k)	将上面的内容配置到nginx.conf后，开放1314端口给博客使用,保存后重新加载nginx服务<br>
 l)	本地访问，http://localhost:1314/,成功访问<br>
-<img src="/images/nginx.png" alt="img">
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/nginx.png" alt="img">
 m)	浏览我的博客文章Myfirstblog<br>
-<img src="/images/g.png" alt="img"><br>
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/g.png" alt="img"><br>
 4、	部署上述静态网站，使其可以公网访问，我使用的是github pages，前面的步骤是使用ssh连接github,注意github需要创建个人访问令牌！
 那么接下来：在github创建一个项目Linuxassitment<br>
 a)	将本地博客生成静态文件并上传到github新建的项目下，执行hugo命令生成public文件<br>
-<img src="/images/hugo.png" alt="img"><br>
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/hugo.png" alt="img"><br>
 b)	把写好的mysite静态项目public文件推送到新建的项目中<br>
 c)	查看项目在github pages下的网址<br>
-<img src="/images/hh.png" alt="img">
+<img src="https://github.com/JiangYYi/linuxassitment.io/blob/master/images/hh.png" alt="img">
 d)	浏览网址，成功部署静态网站：https://jiangyyi.github.io/linuxassitment.io</p>
 
                     
